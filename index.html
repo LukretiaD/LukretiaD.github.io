@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>    <title>Lukretia Deacon</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
+  <title>Lukretia Deacon</title>
 </head>
 
 <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <div id="socialmedia">
-    <a href="http://www.linkedin.com/in/lukretiadeacon" class="fa fa-linkedin"></a>
-    <a href="https://github.com/LukretiaD" class="fa fa-github"></a>
+    <a href="http://www.linkedin.com/in/lukretiadeacon" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://github.com/LukretiaD" target="_blank" class="fa fa-github"></a>
   </div>
 
   <nav>
     <a href="#aboutme">About Me</a>
     <a href="#myskills">My Skills</a>
-    <a href="#myprojects">My Projects</a>
+
+    <div class="dropdowna">
+      <button class="dropbtnav">My Projects</button>
+      <div class="dropdown-content">
+        <a href="#webdesign">Web Design</a>
+        <a href="#graphicdesign">Graphic Design </a>
+      </div>
+    </div>
+
     <a href="#letsconnect">Let's Connect</a>
   </nav>
-  
+
   <header>
     <h1>Lukretia Deacon</h1>
-    <span> <h3>Fullstack Java Developer & Graphic Designer </h3></span>
+    <span>
+      <h3>Fullstack Java Developer & Graphic Designer </h3>
+    </span>
   </header>
 
   <main>
-    <section id="aboutme"><h2>About Me</h2>
+    <section id="aboutme">
+      <h2>About Me</h2>
       <div id="selfimage">
-       <p>Hello, I’m a BFA graduate with years of experience in Art & Design. A fast learner, creative, reliable and dedicated. A great attention to detail and always ready to learn new things! 
-        In my free time, I enjoy creating with my hands. Like, crocheting, painting, drawing and playing in some ceramics. I also enjoy food, watching Youtube and horror films.</p>
-       <img src="./images/myself2.png" alt="Lukretia">
+        <p>Hello, I’m a BFA graduate with years of experience in Art & Design. A fast learner, creative, reliable and
+          dedicated. A great attention to detail and always ready to learn new things!
+          In my free time, I enjoy creating with my hands. Like, crocheting, painting, drawing and playing in some
+          ceramics. I also enjoy food, watching Youtube and horror films.</p>
+        <img src="./images/myself2.png" alt="Lukretia">
       </div>
     </section>
 
-     <section id="myskills"><h2>My Skills</h2>
+    <section id="myskills">
+      <h2>My Skills</h2>
       <div id="skills">
-        
+
         <article>
           <div class="dropdowna">
-          <img src="./images/computer_01.png" alt="program skills" height="130px">
+            <img src="./images/computer_01.png" alt="program skills" height="130px">
             <button class="dropbtn">Program Skills</button>
             <div class="dropdown-content">
-          
-            <a href="#">Photoshop</a>
-            <a href="#">Illustrator</a>
-            <a href="#">Indesign</a>
-            <a href="#">Aftereffects</a>
-            <a href="#">Microsoft Office</a>
+
+              <a href="#">Photoshop</a>
+              <a href="#">Illustrator</a>
+              <a href="#">Indesign</a>
+              <a href="#">Aftereffects</a>
+              <a href="#">Microsoft Office</a>
             </div>
-        </div>
-        </article>
-
-        <article>
-          <div class="dropdowna">
-          <img src="./images/coding_icon_01.png" alt="coding skills">
-          <button class="dropbtn">Coding Skills</button>
-          <div class="dropdown-content">
-          <a href="#">HTML</a>
-          <a href="#">CSS</a>
-          <a href="#">Java</a>
-         </div>
-        </div>
-        </article>
-
-        <article>
-          <div class="dropdowna">
-          <img src="./images/pencil.png" alt="other skills">
-          <button class="dropbtn">Other Skills</button>
-          <div class="dropdown-content">
-            <a href="#">Graphic Design</a>
-            <a href="#">Illustrations</a>
-            <a href="#">Photo Editing</a>
-            <a href="#">Print</a>
-            <a href="#">Customer Service</a>
           </div>
+        </article>
+
+        <article>
+          <div class="dropdowna">
+            <img src="./images/coding_icon_01.png" alt="coding skills">
+            <button class="dropbtn">Coding Skills</button>
+            <div class="dropdown-content">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">Java</a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="dropdowna">
+            <img src="./images/pencil.png" alt="other skills">
+            <button class="dropbtn">Other Skills</button>
+            <div class="dropdown-content">
+              <a href="#">Graphic Design</a>
+              <a href="#">Illustrations</a>
+              <a href="#">Photo Editing</a>
+              <a href="#">Print</a>
+              <a href="#">Customer Service</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="myprojects"><h2>My Projects</h2>
+    <section id="webdesign">
+      <h2>Web Design</h2>
       <div id="projects">
         <article>
-          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git"><h3>Website Templates</h3></a>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>Website Templates</h3>
+          </a>
           <img src="./images/creating_websites.png" alt="website templates">
           <p>Creating website templates for users that need a quick and easy website for publishing.</p>
           <p><strong>Skills:</strong> CSS, HTML & Java</p>
@@ -93,7 +115,9 @@
         </article>
 
         <article>
-          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git"><h3>ColorApp</h3></a>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>ColorApp</h3>
+          </a>
           <img src="./images/color_app.png" alt="color app">
           <p>Created a App that helps the user find, explore and generate different swatches of colors.</p>
           <p><strong>Skills:</strong> CSS, HTML & Java</p>
@@ -101,7 +125,9 @@
         </article>
 
         <article>
-          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git"><h3>PupFun</h3></a>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>PupFun</h3>
+          </a>
           <img src="./images/pup_8bit.png" alt="pup game">
           <p>It is a 8 bit game created to help teach users about HTML & CSS. </p>
           <p><strong>Skills:</strong> CSS, HTML & Java</p>
@@ -110,11 +136,51 @@
       </div>
     </section>
 
-    <div id="connect">
-    <section id="letsconnect"><h2>Let's Connect</h2>
-      <h3>If you are wanting to contact me, please email me! Thank You!</h3>
-      <p><h3>Email: <a href="mailto:sales@codebusiness.com">lukretiadeacon@gmail.com</a></h3></p>
+
+    <section id="graphicdesign">
+      <h2>Graphic Design</h2>
+      <div id="projects">
+        <article>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>Website Templates</h3>
+          </a>
+          <img src="./images/creating_websites.png" alt="website templates">
+          <p>Creating website templates for users that need a quick and easy website for publishing.</p>
+          <p><strong>Skills:</strong> CSS, HTML & Java</p>
+          <p><strong>Technology used:</strong> Visual Studio Code, Github, illustrator </p>
+        </article>
+
+        <article>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>ColorApp</h3>
+          </a>
+          <img src="./images/color_app.png" alt="color app">
+          <p>Created a App that helps the user find, explore and generate different swatches of colors.</p>
+          <p><strong>Skills:</strong> CSS, HTML & Java</p>
+          <p><strong>Technology used:</strong> Visual Studio Code, Github, illustrator </p>
+        </article>
+
+        <article>
+          <a href="https://github.com/LukretiaD/LukretiaD.github.io.git">
+            <h3>PupFun</h3>
+          </a>
+          <img src="./images/pup_8bit.png" alt="pup game">
+          <p>It is a 8 bit game created to help teach users about HTML & CSS. </p>
+          <p><strong>Skills:</strong> CSS, HTML & Java</p>
+          <p><strong>Technology used:</strong> Visual Studio Code, Github, illustrator </p>
+        </article>
       </div>
+    </section>
+
+
+    <div id="connect">
+      <section id="letsconnect">
+        <h2>Let's Connect</h2>
+        <h3>If you are wanting to contact me, please email me! Thank You!</h3>
+        <p>
+        <h3>Email: <a href="mailto:sales@codebusiness.com">lukretiadeacon@gmail.com</a></h3>
+        </p>
+    </div>
     </section>
   </main>
 
@@ -122,5 +188,8 @@
     &copy; 2023 Lukretia Deacon
   </footer>
 
+<script src="app.js"></script>
+
 </body>
+
 </html>
