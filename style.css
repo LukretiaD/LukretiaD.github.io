@@ -26,6 +26,7 @@ header {
 header h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
+    color: #000000;
 }
 
 header span {
@@ -35,12 +36,28 @@ header span {
 
 h2 {
     font-size: 30px;
-     
-    
+
+
 }
 
 h3 {
     font-size: 17px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 nav {
@@ -73,7 +90,8 @@ nav a {
 }
 
 
-nav a:hover,.dropbtnav:hover {
+nav a:hover,
+.dropbtnav:hover {
     color: #ff7e64;
 }
 
@@ -86,16 +104,16 @@ nav a:hover,.dropbtnav:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:#e0583d ;
+    background-color: #e0583d;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #000000;
-  }
+}
 
 
 
@@ -132,6 +150,8 @@ section {
     border-style: solid;
 }
 
+
+
 section>p {
     margin: 1em 0;
 }
@@ -150,6 +170,7 @@ section>p {
     justify-content: center;
 }
 
+
 #aboutme p {
     margin-left: 28px;
     margin-right: 28px;
@@ -162,6 +183,31 @@ section>p {
     border-radius: 50%;
 }
 
+
+#project2 {
+    width: 50em;
+    margin: 10em auto;
+    padding: 1.5em;
+    min-height: 20em;
+    background-color: #fee5dc;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+#project2 h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#project2 p {
+margin-top: 30px;
+}
+
+#project2 img {
+    width: 50em;
+    margin-top: 40px;
+}
 
 #skills {
     display: grid;
@@ -177,7 +223,8 @@ section>p {
     padding: 1em;
 }
 
-#myskills h2, #myprojects h2 {
+#myskills h2,
+#myprojects h2 {
     text-align: center;
 }
 
@@ -230,7 +277,8 @@ section>p {
     background-color: #ff7e64;
 }
 
-#graphicdesign h2 , #webdesign h2 {
+#graphicdesign h2,
+#webdesign h2 {
     text-align: center;
 }
 
@@ -247,8 +295,9 @@ section>p {
 }
 
 #projects img {
-    width: 9em;
-    padding: 1em;
+    width: 14em;
+    height: auto;
+    padding: 1em, 1em;
 }
 
 #projects a {
@@ -259,6 +308,148 @@ section>p {
 #projects p {
     text-align: left;
 }
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapse {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    width: 40%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapse:hover {
+    background-color: #ff7e64;
+
+
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 0px;
+    display: none;
+    overflow: hidden;
+    background-color: fee5dc;
+
+
+}
+
+
+/*The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: scroll;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
 
 #letsconnect {
     text-align: center;
