@@ -27,6 +27,7 @@ function windowFunction2() {
 window.open(href="../images/Lukretia Deacon Resume 2024.pdf")
 }
 
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -46,13 +47,13 @@ function topFunction() {
 
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
+ var img = images[i];
+//  and attach our click listener for this image.
+ img.onclick = function(evt) {
+   modal.style.display = "block";
+   modalImg.src = this.src;
+   captionText.innerHTML = this.alt;
+ }
 }
 
 var span = document.getElementsByClassName("close2")[0];
@@ -60,7 +61,6 @@ var span = document.getElementsByClassName("close2")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
 
 
 

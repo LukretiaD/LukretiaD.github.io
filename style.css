@@ -359,6 +359,23 @@ margin-top: 30px;
     cursor: pointer;
 }
 
+
+.githubtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    width: 40%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10%;
+    margin-top: 30px;
+
+}
+
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
