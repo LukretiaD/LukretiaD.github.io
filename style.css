@@ -7,10 +7,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 body {
     margin: 0;
+
 }
 
 
@@ -19,19 +21,25 @@ main {
 }
 
 header {
-    margin-left: 16em;
-}
 
+
+    margin-left: 8em;
+
+}
 
 header h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
     color: #000000;
+    display: flex;
+
+
 }
 
 header span {
     font-size: 17px;
     color: white;
+
 }
 
 h2 {
@@ -79,6 +87,8 @@ nav a {
     border: none;
 }
 
+
+
 .dropbtnav {
     font-size: 15px;
     padding: .5em 1em;
@@ -122,9 +132,9 @@ nav a:hover,
     display: flex;
     font-size: 30px;
     background: black;
-    width: 3em;
+    width: auto;
     float: right;
-    margin-right: 150px;
+    margin-right: 80px;
     margin-top: 0;
 }
 
@@ -179,12 +189,12 @@ section>p {
 
 #aboutme img {
     border: 3px solid black;
-width: 20em;
+    width: 20em;
     border-radius: 50%;
     margin-bottom: 30px;
-    margin-right:20px;
-    
-    
+    margin-right: 20px;
+
+
 }
 
 
@@ -205,7 +215,7 @@ width: 20em;
 }
 
 #project2 p {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 #project2 img {
@@ -487,4 +497,15 @@ footer {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .test,
+    footer {
+        width: 194em;
+        margin: 0em auto;
+    }
+
 }
